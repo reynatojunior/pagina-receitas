@@ -96,6 +96,10 @@ body {
     font-size: 14px;
 }
 
+footer{
+    text-align: center;
+}
+
 li::marker {
     color: #844a34;
 }
