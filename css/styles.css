@@ -1,0 +1,139 @@
+/* Reseta as margens e preenchimentos e define a box-sizing para todos os elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: #f3e5d8;
+    line-height: 1.6;
+    padding: 20px; /* Adiciona um padding ao corpo para espaçamento */
+}
+
+.container {
+    width: 90%;
+    max-width: 800px; /* Define uma largura máxima para telas maiores */
+    margin: 100px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adiciona sombra para destacar o container */
+}
+
+.header-container > img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.header-container > h1 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.description-container {
+    padding-bottom: 15px;
+    font-size: 14px;
+}
+
+.time {
+    background-color: #fff7fc;
+    line-height: 2;
+    padding: 10px;
+    margin-left: 15px;
+}
+
+.time > h4 {
+    color: #7e425c;
+}
+
+.ingredients {
+    line-height: 2;
+    border-bottom: 1px solid #eaeaea;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.ingredients > ul > li {
+    margin-left: 35px;
+    padding-left: 20px;
+}
+
+.instructions {
+    padding-top: 15px;
+    line-height: 2;
+    margin-left: 15px;
+    border-bottom: 1px solid #eaeaea;
+    padding-bottom: 15px;
+}
+
+.instructions > ol > li {
+    margin-left: 15px;
+    padding-left: 20px;
+}
+
+.nutrition {
+    margin-left: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    line-height: 2;
+}
+
+.table {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-bottom: 1px solid #eaeaea;
+    margin-left: 10%;
+}
+
+.dados {
+    color: #844a34;
+    font-weight: bold;
+}
+
+.description-nutrition {
+    font-size: 14px;
+}
+
+li::marker {
+    color: #844a34;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+h2 {
+    color: #844a34;
+}
+
+/* Media Queries para Responsividade */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        margin: 50px auto;
+        padding: 15px;
+    }
+
+    .header-container > h1,
+    .description-container,
+    .time,
+    .ingredients,
+    .instructions,
+    .nutrition,
+    .table,
+    .dados,
+    .description-nutrition,
+    .bold,
+    h2 {
+        margin-left: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .table {
+        grid-template-columns: 1fr;
+        margin-left: 0;
+    }
+}
